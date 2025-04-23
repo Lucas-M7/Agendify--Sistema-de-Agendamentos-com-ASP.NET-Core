@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <ItemGroup>
+      <ProjectReference Include="..\Agendify.Domain\Agendify.Domain.csproj" />
+      <ProjectReference Include="..\Agendify.Application\Agendify.Application.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="Data\Context\" />
+      <Folder Include="Repositories\" />
+    </ItemGroup>
+
+    <PropertyGroup>
+        <TargetFramework>net9.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+</Project>

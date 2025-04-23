@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>net9.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="9.0.3" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Agendify.Application\Agendify.Application.csproj" />
+      <ProjectReference Include="..\Agendify.Infrastructure\Agendify.Infrastructure.csproj" />
+      <ProjectReference Include="..\Agendify.Domain\Agendify.Domain.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="Configurations\" />
+      <Folder Include="Controllers\" />
+      <Folder Include="Filters\" />
+    </ItemGroup>
+
+</Project>
